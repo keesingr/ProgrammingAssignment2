@@ -1,0 +1,43 @@
+[33mcommit 7f657dd22ac20d22698c53b23f0057e1a12c09b7[m
+Author: Roger D. Peng [amelia] <rdpeng@gmail.com>
+Date:   Tue Apr 22 10:09:22 2014 -0400
+
+    More typos
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 81bba09..7a8c502 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,16 +1,16 @@[m
+ ### Introduction[m
+ [m
+ This second programming assignment will require you to write an R[m
+[31m-function that is able to cache potentially time-consuming computations. For[m
+[31m-example, taking the mean of a numeric vector is typically a fast[m
+[32m+[m[32mfunction that is able to cache potentially time-consuming computations.[m
+[32m+[m[32mFor example, taking the mean of a numeric vector is typically a fast[m
+ operation. However, for a very long vector, it may take too long to[m
+ compute the mean, especially if it has to be computed repeatedly (e.g.[m
+ in a loop). If the contents of a vector are not changing, it may make[m
+ sense to cache the value of the mean so that when we need it again, it[m
+ can be looked up in the cache rather than recomputed. In this[m
+[31m-Programming Assignment you will take advantage of the scoping rules of the R[m
+[31m-language and how they can be manipulated to preserve state inside of an[m
+[31m-R object.[m
+[32m+[m[32mProgramming Assignment you will take advantage of the scoping rules of[m
+[32m+[m[32mthe R language and how they can be manipulated to preserve state inside[m
+[32m+[m[32mof an R object.[m
+ [m
+ ### Example: Caching the Mean of a Vector[m
+ [m
+[36m@@ -76,8 +76,8 @@[m [mWrite the following functions:[m
+     that can cache its inverse.[m
+ 2.  `cacheSolve`: This function computes the inverse of the special[m
+     "matrix" returned by `makeCacheMatrix` above. If the inverse has[m
+[31m-    already been calculated (and the matrix has not changed), then the[m
+[31m-    `cachesolve` should retrieve the inverse from the cache.[m
+[32m+[m[32m    already been calculated (and the matrix has not changed), then[m
+[32m+[m[32m    `cacheSolve` should retrieve the inverse from the cache.[m
+ [m
+ Computing the inverse of a square matrix can be done with the `solve`[m
+ function in R. For example, if `X` is a square invertible matrix, then[m
